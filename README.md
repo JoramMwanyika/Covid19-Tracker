@@ -1,120 +1,81 @@
 # COVID-19 Global Data Tracker
 
-An interactive data analysis project that tracks and visualizes global COVID-19 trends using Python. This project provides comprehensive insights into the pandemic's progression, vaccination efforts, and regional impacts.
+## Project Description
+A Python-based data analysis project that visualizes and analyzes global COVID-19 trends. This interactive dashboard provides real-time insights into the pandemic's progression, comparing different countries' responses, vaccination efforts, and overall impact using data from Our World in Data.
 
-## Features
+## Project Objectives
 
-- Global COVID-19 case analysis and trend visualization
-- Death rates and recovery tracking across countries
-- Vaccination progress monitoring with comparative analysis
-- Cross-country statistical comparisons
-- Interactive choropleth map visualization
-- Automated data retrieval and processing
-- Comprehensive Jupyter notebook documentation
+1. **Data Analysis & Visualization**
+   - Track and visualize global COVID-19 cases and deaths
+   - Monitor vaccination progress across countries
+   - Compare pandemic responses between nations
+   - Create interactive geographic visualizations
 
-## Analysis Components
+2. **Technical Learning**
+   - Practice data cleaning and preprocessing
+   - Implement statistical analysis techniques
+   - Create effective data visualizations
+   - Work with real-world, continuously updated data
 
-### 1. Global Trends Analysis
-- Daily and cumulative case tracking
-- Death rate analysis
-- Trend visualization using time series plots
-- Multiple wave identification and analysis
+## Tools and Libraries
 
-### 2. Country Comparisons
-- Comparative analysis of selected countries
-- Case progression visualization
-- Death rate comparisons
-- Regional impact assessment
+### Core Technologies
+- Python 3.8+
+- Jupyter Notebook
 
-### 3. Vaccination Progress
-- Vaccination rate tracking
-- Population coverage analysis
-- Country-wise vaccination comparison
-- Progress visualization over time
+### Data Analysis
+- pandas: Data manipulation and analysis
+- numpy: Numerical computations
 
-### 4. Geographic Distribution
-- Interactive choropleth map
-- Global case distribution
-- Regional hotspot identification
-- Per-capita analysis
+### Visualization
+- matplotlib: Static visualizations
+- seaborn: Statistical data visualization
+- plotly: Interactive charts and maps
 
-## Setup and Usage
+### Data Collection
+- requests: Data downloading
+- pathlib: File handling
 
-1. Clone this repository:
+## How to Run the Project
+
+1. **Setup Environment**
    ```bash
-   git clone <repository-url>
-   cd Covid19-Tracker
-   ```
-
-2. Install dependencies:
-   ```bash
+   # Install required packages
    pip install -r requirements.txt
    ```
 
-3. Run the analysis:
-   - Option 1: Run the complete analysis script
-     ```bash
-     python covid_analysis.py
-     ```
-   - Option 2: Open and run the Jupyter notebook
-     ```bash
-     jupyter notebook covid19_analysis.ipynb
-     ```
+2. **Run Analysis**
+   ```bash
+   # Option 1: Run Python script
+   python covid_analysis.py
 
-## Project Structure
+   # Option 2: Start Jupyter Notebook
+   jupyter notebook
+   # Then open covid19_analysis.ipynb
+   ```
 
-- `covid19_analysis.ipynb`: Interactive Jupyter notebook with complete analysis
-- `covid_analysis.py`: Python script for automated analysis
-- `requirements.txt`: Project dependencies
-- Generated visualizations:
-  - `global_trends.png`: Worldwide COVID-19 trends
-  - `country_comparison.png`: Cross-country analysis
-  - `vaccination_progress.png`: Vaccination tracking
-  - `choropleth_map.html`: Interactive global distribution map
+3. **View Results**
+   - Check generated visualizations in project folder:
+     - `global_trends.png`: Global case/death trends
+     - `country_comparison.png`: Cross-country analysis
+     - `vaccination_progress.png`: Vaccination tracking
+   - Open `choropleth_map.html` in a web browser for interactive map
 
-## Data Source
+## Key Insights
 
-This project uses the Our World in Data (OWID) COVID-19 dataset, which provides:
-- Daily and cumulative cases
-- Death counts and rates
-- Vaccination data
-- Testing information
-- Regional metadata
+1. **Global Trends**
+   - Multiple infection waves identified across regions
+   - Varying effectiveness of containment measures
 
-The data is automatically downloaded and processed when running the analysis.
+2. **Vaccination Impact**
+   - Strong correlation between vaccination rates and case reduction
+   - Significant variations in vaccine distribution globally
 
-## Tools and Technologies
+3. **Regional Patterns**
+   - Different response effectiveness across countries
+   - Economic factors influencing testing and reporting
 
-- Python 3.8+
-- Data Analysis: pandas, numpy
-- Visualization: matplotlib, seaborn, plotly
-- Interactive Environment: Jupyter Notebook
-- Data Processing: requests, pathlib
-
-## Results and Insights
-
-The analysis reveals several key insights:
-1. Global pandemic waves and their characteristics
-2. Vaccination effectiveness and coverage patterns
-3. Regional response variations
-4. Correlation between various factors (cases, deaths, vaccinations)
-
-## Contributing
-
-Feel free to fork this repository and submit pull requests. You can also:
-- Add new analysis components
-- Improve visualizations
-- Extend country comparisons
-- Add new data sources
-
-## License
-
-This project is open-source and available under the MIT License.
-
-## Acknowledgments
-
-- Our World in Data for providing the comprehensive COVID-19 dataset
-- Python data science community for the tools and libraries
-- Contributors and maintainers of the used packages
-- `requirements.txt`: Python dependencies
-- `README.md`: Project documentation
+4. **Data Limitations**
+   - Reporting inconsistencies between countries
+   - Testing capacity affecting case numbers
+   - Delayed reporting in some regions
